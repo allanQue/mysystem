@@ -45,40 +45,40 @@
 		      type="selection"
 		      width="55">
 		    </el-table-column>
-	      <el-table-column
+	      	<el-table-column
 		      prop="id"
 		      label="ID"
 		      width="180"
 		      text-align="center">
-		  </el-table-column>
-		  <el-table-column
+		  	</el-table-column>
+		  	<el-table-column
 	        prop="sort"
 	        label="商品分类">
-	      </el-table-column>
-	      <el-table-column
+	      	</el-table-column>
+	      	<el-table-column
 	        prop="name"
 	        label="商品名称">
-	      </el-table-column>
-	      <el-table-column
+	      	</el-table-column>
+	      	<el-table-column
 	        prop="price"
 	        label="价格">
-	      </el-table-column>
-	      <el-table-column
+	      	</el-table-column>
+	      	<el-table-column
 	        prop="date"
 	        label="上传时间">
-	      </el-table-column>
-	      <el-table-column
+	      	</el-table-column>
+	      	<el-table-column
 	        prop="status"
 	        label="发布状态">
-	      </el-table-column>
-	      <el-table-column label="操作">
-		      <template slot-scope="scope">
-		        <el-button
-		          size="mini"
-		          @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-		        <el-button @click.native.prevent="deleteRow(scope.$index, tableData)"
+	      	</el-table-column>
+	      	<el-table-column label="操作">
+		      	<template slot-scope="scope">
+		        	<el-button
+		          	size="mini"
+		          	@click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+		        	<el-button @click.native.prevent="deleteRow(scope.$index, tableData)"
 		          type="text" size="small">移除</el-button>
-		      </template>
+		      	</template>
 		    </el-table-column>
 	    </el-table>
     </div>
@@ -90,19 +90,75 @@
   				input21: '',
   				input10: '',
   				tableData:[{
-  					checked:'true',
+  					checked:'false',
   					id:'001',
   					sort:'美食',
   					name:'舌尖上的中国第一季',
   					price:'￥79',
   					date:'20121204',
-  					status:'已发布'
-  					
-  					
-  					
-  					
-  					
-  				}],
+  					status:'已发布'	
+  				},
+  				{	
+  					checked:'false',
+					id:"002",
+					sort:"美食",
+					name:"舌尖上的中国第二季",
+					price:179,
+					date:20141204,
+					status:"待修改"
+					
+				},
+				{
+					checked:'false',
+					id:"003",
+					sort:"美食",
+					name:"舌尖上的中国第三季",
+					price:109,
+					date:20161204,
+					status:"待修改"
+					
+				},
+				{
+					checked:'false',
+					id:"004",
+					sort:"历史",
+					name:"诸葛亮骂王朗",
+					price:2999,
+					date:20180201,
+					status:"待修改"
+					
+				},
+				{
+					checked:'false',
+					id:"005",
+					sort:"新闻",
+					name:"新时代特色中国梦",
+					price:19,
+					date:20180512,
+					status:"待修改"
+					
+				},
+				{
+					checked:'false',
+					id:"006",
+					sort:"新闻",
+					name:"新时代特色中国梦",
+					price:998,
+					date:20180514,
+					status:"待修改"
+					
+				},
+				{
+					checked:'false',
+					id:"007",
+					sort:"体育",
+					name:"皇马大战利物浦",
+					price:369,
+					date:20180515,
+					status:"待修改"
+					
+				}
+  				],
   				options: [{
 			          value: '选项1',
 			          label: '美食'

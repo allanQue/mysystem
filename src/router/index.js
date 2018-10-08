@@ -16,8 +16,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: '管理系统',
-      component: HelloWorld,
+      name:'商品管理',
+			component:manage
 //    children:[
 //    	{
 //    		path:'/login',
